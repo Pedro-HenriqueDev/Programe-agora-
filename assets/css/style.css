@@ -1,0 +1,228 @@
+/*font-family: 'Josefin Sans', sans-serif;
+font-family: 'Nunito', sans-serif;*/
+
+/*configurações gerais do site*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+body {
+    width: 100%;
+    max-width: 100%;
+    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+}
+
+/*Barra de navegação*/
+.container-header {
+    width: 100%;
+    box-shadow: 0px 5px rgba(0, 0, 0,0.25);
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #060706;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+.logo img {
+    width: 100%;
+    margin-left: 10px;
+}
+.menu-navbar {
+    margin-right: 10px;
+}
+.itens-navbar {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(209, 209, 209);
+    cursor: pointer;
+    padding: 15px;
+    font-size: 1.0rem;
+}
+.itens-navbar:hover {
+    color: black;
+    border-radius: 5px;
+    background-color: #CFFFDC;
+}
+
+/* Conteúdo Principal*/
+.main {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.main-conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.titulo-main {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    font-family:'Nunito', sans-serif;
+    margin-bottom: 50px;
+}
+.main-texto {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+.img-main {
+    width: 40%;
+    height: auto;
+}
+.subtitulo-main {
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 30px;
+}
+.sub-conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.escolhas-tudo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.escolhas-main {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*footer*/
+.footer-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: #060706;
+}
+.img-footer {
+    width: 100px;
+    height: auto;
+}
+.meu-git {
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    color: #f4f1ff;
+}
+.meu-git:hover {
+    text-decoration: underline;
+}
+/*Pag benefícios */
+.main-beneficios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.main-beneficios div {
+    display: flex;
+    margin-bottom: 70px;
+}
+.main-beneficios div img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0,0.25);
+}
+.main-beneficios div p {
+    font-size: 21px;
+    margin-top: 70px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+@media (max-width:1000px) {
+    .main-beneficios {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    .main-beneficios div:nth-child(3) {
+        grid-row: 4 / 5;
+
+    }
+}
+
+/* Pag Pacotes */ 
+
+.main-pacotes {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.main-pacotes div img {
+    max-width: 300px;
+    margin: 10px;
+}
+.main-pacotes div {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 2px 2px rgba(0, 0, 0,0.25);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.main-pacotes div:hover {
+    box-shadow: 5px 5px rgba(0, 0, 0,0.25);
+    border: 1px black;
+    border-radius: 3px;
+    background-image: linear-gradient(-225deg, #7963da 0%, #45baec 51%, #34e2ce 100%);
+}
+.main-pacotes div h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+.main-pacotes div button {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+.main-pacotes div button {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #060706;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.main-pacotes div button:hover {
+    background-color: white;
+    color: black;
+}
+.main-pacotes div div {
+    text-align: center;
+}
+
