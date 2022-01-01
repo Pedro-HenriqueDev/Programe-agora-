@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+
+
+    <header class="container-header">
+
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../../assets/img/logo.png" alt="logo"></a>
+            </div>
+
+            <div class="menu-navbar">
+                <a class="itens-navbar" href="../../index.html">Menu</a>
+                <a class="itens-navbar" href="../../beneficios.html">Benefícios</a>
+                <a class="itens-navbar" href="../../pacotes.html">Pacotes</a>
+                <a class="itens-navbar" href="./pag registro/Formulário_HTML e CSS/form.html">Registre-se!</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="main-form">
+        <div>
+
+            <form class="container-form" action="">
+                <div>
+                    <h1 id="titulo-registro">Registro</h1>
+                    <p id="subtitulo-registro">Complete as informações</p>
+                    <br>
+                </div>
+
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome"><strong>Nome</strong> </label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="sobrenome"><strong>Sobrenome</strong></label>
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                    </div>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="campo">
+                    <label for=""><strong>Sexo</strong></label>
+                    <label for="">
+                        <input type="radio" name="sexo" class="sexo" value="masculino" checked>Masculino
+                    </label>
+                    <label for="">
+                        <input type="radio" name="sexo" class="sexo" value="feminino">Feminino
+                    </label>
+                    <label for="">
+                        <input type="radio" name="sexo" class="sexo" value="boiola">Prefiro não informar
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <label for="estado"><strong>Estado</strong></label>
+                    <select name="" id="estado">
+                        <option value="" checked selected disabled>Selecione</option>
+                        <option value="">Acre</option>
+                        <option value="">Alagoas</option>
+                        <option value="">Amapá</option>
+                        <option value="">Amazonas</option>
+                        <option value="">Bahia</option>
+                        <option value="">Ceará</option>
+                        <option value="">Distrito Federal</option>
+                        <option value="">Espírito Santo</option>
+                        <option value="">Goiás</option>
+                        <option value="">Maranhão</option>
+                        <option value="">Mato Grosso</option>
+                        <option value="">Mato Grosso do Sul</option>
+                        <option value="">Minas Gerais</option>
+                        <option value="">Pará</option>
+                        <option value="">Paraíba</option>
+                        <option value="">Paraná</option>
+                        <option value="">Pernambuco</option>
+                        <option value="">Piauí</option>
+                        <option value="">Rio de Janeiro</option>
+                        <option value="">Rio Grande do Norte</option>
+                        <option value="">Rio Grande do Sul</option>
+                        <option value="">Rondônia</option>
+                        <option value="">Roraima</option>
+                        <option value="">Santa Catarina</option>
+                        <option value="">São Paulo</option>
+                        <option value="">Sergipe</option>
+                        <option value="">Tocantins</option>
+
+                    </select>
+                </div>
+
+                <fieldset class="grupo">
+                    <div id="check">
+                        <label for=""><strong> Selecione a tecnologia que tem interesse:</strong></label> <br> <br>
+                        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                        <label for="">HTML</label>
+                        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                        <label for="">CSS</label>
+                        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Java-script">
+                        <label for="">Java-scrips</label>
+                        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                        <label for="">PHP</label>
+                        <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                        <label for="">C#</label>
+                        <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                        <label for="">Python</label>
+                        <input type="checkbox" id="tecnologia7" name="tecnologia7" value="outra...">
+                        <label for="">Outra...</label>
+                    </div>
+                </fieldset>
+
+                <div class="campo">
+                    <br>
+                    <label for=""><strong> Conte um pouco da sua experiência com programação</strong></label>
+                    <textarea style="width: 26em;" name="experiencia" id="experiencia" cols="30" rows="6"></textarea>
+                </div>
+                <div class="container-botao">
+                    <button class="botao" type="submit">Concluído</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-flex">
+            <a class="meu-git" href="https://github.com/Pedro-HenriqueDev">By Pedro Henrique</a>
+            <a class="link-img-footer" href="https://github.com/">
+                <img class="img-footer" src="../../assets/img/git-icon.png" alt="git.icon">
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -8,7 +8,6 @@ font-family: 'Nunito', sans-serif;*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'PT Sans', sans-serif;
 }
 body {
     width: 100%;
@@ -58,11 +57,10 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 .main-conteudo {
-    display: flex;
+    display: block;
     flex-direction: row;
     justify-content: center;
     align-content: space-around;
-    flex-wrap: wrap;
 }
 .titulo-main {
     font-size: 30px;
@@ -160,7 +158,19 @@ body {
     .main-beneficios {
         display: grid;
         grid-template-columns: 1fr;
-        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+    }
+    .main-beneficios div {
+        margin-bottom: 35px;
+
+    }
+    .main-beneficios div img{
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    .main-beneficios div p {
+        margin-top: 0;
     }
     .main-beneficios div:nth-child(3) {
         grid-row: 4 / 5;
@@ -225,4 +235,3 @@ body {
 .main-pacotes div div {
     text-align: center;
 }
-

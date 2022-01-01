@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: beige;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+}
+#titulo-registro{
+    margin-left: 7%;
+}
+#subtitulo-registro {
+    margin-left: 10%;
+}
+fieldset {
+    border: 0px;
+}
+input, select, textarea, button {
+    border-radius: 5px;
+}
+.campo {
+    margin-bottom: 1em;
+}
+.campo label {
+    margin-bottom: 0.2em;
+    display: block;
+}
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #59429D;
+    box-sizing: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+.campo select option {
+    padding-right: 1em;
+}
+.campo input:focus, campo select:focus, .campo textarea:focus {
+    background-color: #e0e0f8;
+}
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0px;
+    margin-bottom: 1em;
+    color: white;
+    padding: 0.4em 0.7em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    /*position: absolute;*/
+    left: 50%;
+    transform:translate(-50%, 50%) ;
+}
+@media (max-width:800px) {
+   
+}
+
+.botao:hover {
+    background: #8279a1;
+    box-shadow: inset  2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    cursor: pointer;
+}
+#check {
+    display: inline-block;
+    
+}
+#check label {
+    margin-right: 5px;
+}
+/*form editado pelo barril*/
+.main-form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.container-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.534);
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.container-botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.campo .sexo {
+    margin-right: 5px;
+}
+
