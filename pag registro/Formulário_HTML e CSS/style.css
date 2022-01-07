@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    color: beige;
+    color: rgb(255, 255, 255);
 }
 body {
     font-family: 'Nunito', sans-serif;
@@ -36,7 +36,7 @@ input, select, textarea, button {
 }
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 0.3em;
-    border: 1px solid #2ea7af;
+    border: 1px solid #888888;
     box-sizing: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
     color: black;
@@ -50,19 +50,25 @@ input, select, textarea, button {
 }
 .botao {
     font-size: 1.2em;
-    background: #59429d;
+    background: #ffffff;
     border: 0px;
     margin-bottom: 1em;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 0.4em 0.7em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    transition: linear 0.2s;
 }
 .botao:hover {
-    background: #8279a1;
+    background: #000000;
     box-shadow: inset  2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
     cursor: pointer;
+    color: #ffffff;
+    
+}
+#estado option {
+    color: black;
 }
 #check {
     display: inline-block;
